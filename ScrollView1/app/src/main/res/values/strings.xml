@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ScrollView1</string>
+    <string name="example">As you can see in the above screenshot, the option shows up when you right-click on any message. You can also hover over it and click the three dots to access the “Reply” option. It works for all messages including those sent by you.
+        The quoted reply feature is nothing new in the messaging or collaboration tools, but the feature has been missing from the Teams desktop client. In a roadmap update, Microsoft previously confirmed that quoted replies will come to the existing Electron client, but this feature is nowhere to be seen yet.</string>
+</resources>
