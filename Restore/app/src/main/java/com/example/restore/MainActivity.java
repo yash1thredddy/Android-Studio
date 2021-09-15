@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
 Button cnt,dec;
 TextView tv;
 int count;
-int decr;
+int dec1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,8 +41,8 @@ int decr;
         dec.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                decr = Integer.valueOf(tv.getText().toString()) -  1;
-                tv.setText(String.valueOf(decr));
+                dec1 = Integer.valueOf(tv.getText().toString()) -  1;
+                tv.setText(String.valueOf(dec1));
             }
         });
     }
