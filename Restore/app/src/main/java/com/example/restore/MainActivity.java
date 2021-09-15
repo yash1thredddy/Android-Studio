@@ -10,9 +10,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-Button cnt;
+Button cnt,dec;
 TextView tv;
 int count;
+int decr;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +26,7 @@ int count;
             count = savedInstanceState.getInt("counter", 0);
         }
         cnt = findViewById(R.id.button);
+        dec = findViewById(R.id.button1);
         tv = findViewById(R.id.textView);
         tv.setText(String.valueOf(count));
 
@@ -36,5 +38,12 @@ int count;
             }
 
     });
+        dec.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                decr = Integer.valueOf(tv.getText().toString()) -  1;
+                tv.setText(String.valueOf(decr));
+            }
+        });
     }
 }
